@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<head>
+	<title>game</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="css/style.css">
+	
+</head>
+<body>
+	<div class="menu">
+		 <div class="dropdown">
+			 <button class="btn-menu">Scirt Cards</button>
+			 <div class="dropdown-content">
+				<div class="icon" onclick="cardScirt('url(./img/shirt1.jpg) no-repeat');cardRender();"><img src="img/shirt1_icon.jpg" alt=""></div>
+				<div class="icon" onclick="cardScirt('url(./img/shirt2.jpg) no-repeat');cardRender();"><img src="img/shirt2_icon.jpg" alt=""></div>
+				<div class="icon" onclick="cardScirt('url(./img/shirt3.jpg) no-repeat');cardRender();"><img src="img/shirt3_icon.jpg" alt=""></div>
+		 	 </div>
+		</div> 
+		 <div class="dropdown">
+			<button id="btn_1" class="btn-menu">Game Difficulty</button>
+			<div class="dropdown-content">
+				<div onclick="numberOfCards(this,10, 1);cardRender();"><p>Low(5x2)</p></div>
+				<div onclick="numberOfCards(this,18, 2);cardRender();"><p>Medium(6x3)</p></div>
+				<div onclick="numberOfCards(this,24, 3);cardRender();"><p>High(8x3)</p></div>
+			</div>
+		</div>
+		<form onclick="timerStartStopClear();" class="clock" name="timeForm">   
+			<input name="stopWatch" size=10 value="00:00:00.00">  
+		</form>
+	<button class="btn-menu" onclick="cardRender();timerStartStopClear();">New Game</button>
+	</div>
+	<div>
+		<div class="game-field" id="game-field">
+			<div class="text">
+			<p>How to play: </p>
+			<ul>
+				<li>Memory is a counter game where the object is to find pairs.</li>
+				<li>When the game begins, all pictures are hidden.</li>
+			</ul>
+			<p>To Play:</p>
+			<ol>
+				<li>Select two cards to try to match the pictures.</li>
+				<li>If you match the pictures you can go again.</li>
+				<li>If they don't match it is the computer turn them</li>
+				<li>The player that finds all pairs wins!</li>
+				<li>Have fun!</li>
+			</ol>
+			</div>	
+		</div>
+	</div>	
+	<script src="js/game_logic.js"></script>
+
+
+	
+</body>
+	
+</html>
