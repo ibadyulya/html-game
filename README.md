@@ -1,1 +1,1 @@
-# link for play: https://ibadyulya.github.io/match-match/
+# link for play: https://ibadyulya.github.io/html-game/
